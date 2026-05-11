@@ -1,0 +1,59 @@
+<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SearchCourseWorkNew.MainWindow"
+    Width="800"
+    Height="700"
+    Title="Search Algorithms"
+    Background="#395f7a">
+
+    <StackPanel Margin="20"
+                Spacing="10">
+
+        <TextBlock Text="Розмір масиву"/>
+
+        <TextBox Name="SizeTextBox"
+                 Text="100"/>
+
+        <Button Name="GenerateButton"
+                Content="Генерувати масив"
+                Click="GenerateButton_Click"/>
+
+        <TextBlock Text="Шукане значення"/>
+
+        <TextBox Name="TargetTextBox"/>
+
+        <TextBlock Text="Метод пошуку"/>
+
+        <ComboBox Name="MethodComboBox"
+                  SelectedIndex="0">
+
+            <ComboBoxItem Content="Послідовний пошук"/>
+            <ComboBoxItem Content="Пошук Фібоначчі"/>
+            <ComboBoxItem Content="Інтерполяційний пошук"/>
+            <ComboBoxItem Content="Хеш-пошук"/>
+
+        </ComboBox>
+
+        <Button Name="SearchButton"
+                Content="Виконати пошук"
+                Click="SearchButton_Click"/>
+
+        <TextBlock Text="Масив"/>
+
+        <ListBox Name="ArrayListBox"
+                 Height="300"/>
+
+        <TextBlock Name="ResultTextBlock"
+                   FontSize="18"
+                   FontWeight="Bold"/>
+
+        <TextBlock Name="ComparisonsTextBlock"
+                   FontSize="16"/>
+
+        <TextBlock Name="TimeTextBlock"
+                   FontSize="16"/>
+
+    </StackPanel>
+
+</Window>
